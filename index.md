@@ -1,16 +1,24 @@
 # Hello
+
 This is my meme that I made using the [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html).
 
 ![](my_meme.png)
 
-# Inspiration
-I made this meme because I had already used this format to make a meme when I was in high school.
+## Inspiration
+I found this meme [{here}](https://knowyourmeme.com/memes/das-good-shit)
+
+I made this meme because I had already used this format to make a meme when I was in **high school**.
 I found it easy to find and adapt for my own purposes. 
-This meme shows a man trying to the good stuff, which is the STATS220 course which is new as I used ned characters (Me) and a new thing that the man takes out of the envelope.
+
+This meme shows a man trying to the good stuff, which is the *STATS220 course* which is new as I used new characters (Me) and a new thing that the man takes out of the envelope.
+
+**I got rid of the swears too!**
+
+![a](https://qph.fs.quoracdn.net/main-qimg-8f1f5059a567f74f1cf8dacd237edb8a)
 
 
-
-#The R code I used
+## The R code I used
+```
 library(magick)
 
 me <- image_blank(50, 50, color="#000000") %>%
@@ -46,3 +54,4 @@ meme <- c(first_row, second_row) %>%
   meme
 
 image_write(meme, "my_meme.png")
+```
